@@ -13,7 +13,7 @@ waktu2 = jarak2/kecepatan2
 
 jmlWaktu = waktu1+waktu2
 jam = floor(jmlWaktu)
-menit = int(float('{:.2f}'.format(jmlWaktu-jam))*100)
+menit = floor((jmlWaktu-jam)*100)
 menit += istirahat + menitBerangkat
 jamSampai = jamBerangkat + jam + (menit//60)
 menitSampai = menit%60
