@@ -1,9 +1,61 @@
-# x = 11
-# print(type(x))
-# y = 2
-# print(type(y))
-# print(type(x**y),x**y)
+print('='*10)
+x = 11
+print(type(x))
+y = 2
+print(type(y))
+print(type(x**y),x**y)
 
+print('='*10)
+# (+)
+print('\n[+]')
+print('integer + integer : ', type(4 + 2))
+print('integer + float   : ', type(4 + 2.0))
+print('float   + integer : ', type(4.0 + 2))
+print('float   + float   : ', type(4.0 + 2.0))
+
+# (-)
+print('\n[-]')
+print('integer - integer : ', type(4 - 2))
+print('integer - float   : ', type(4 - 2.0))
+print('float   - integer : ', type(4.0 - 2))
+print('float   - float   : ', type(4.0 - 2.0))
+
+# (*)
+print('\n[*]')
+print('integer * integer : ', type(4 * 2))
+print('integer * float   : ', type(4 * 2.0))
+print('float   * integer : ', type(4.0 * 2))
+print('float   * float   : ', type(4.0 * 2.0))
+
+# (/)
+print('\n[/]')
+print('integer / integer : ', type(4 / 2))
+print('integer / float   : ', type(4 / 2.0))
+print('float   / integer : ', type(4.0 / 2))
+print('float   / float   : ', type(4.0 / 2.0))
+
+# (//)
+print('\n[//]')
+print('integer // integer : ', type(4 // 2))
+print('integer // float   : ', type(4 // 2.0))
+print('float   // integer : ', type(4.0 // 2))
+print('float   // float   : ', type(4.0 // 2.0))
+
+# (%)
+print('\n[%]')
+print('integer % integer : ', type(4 % 2))
+print('integer % float   : ', type(4 % 2.0))
+print('float   % integer : ', type(4.0 % 2))
+print('float   % float   : ', type(4.0 % 2.0))
+
+# (**)
+print('\n[**]')
+print('integer ** integer : ', type(4 ** 2))
+print('integer ** float   : ', type(4 ** 2.0))
+print('float   ** integer : ', type(4.0 ** 2))
+print('float   ** float   : ', type(4.0 ** 2.0))
+
+print('='*10)
 a = 10
 p = y = x = z = a
 print(a)
