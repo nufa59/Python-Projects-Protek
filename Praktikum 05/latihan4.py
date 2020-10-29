@@ -12,19 +12,17 @@ if golongan not in list_gol:
 if golongan == 'A':
       gaji = 10000000
       potongan = floor(0.025*gaji)
-      gaji_bersih = gaji - potongan
 elif golongan == 'B':
       gaji = 8500000
       potongan = floor(0.02*gaji)
-      gaji_bersih = gaji - potongan
 elif golongan == 'C':
       gaji = 7000000
       potongan = floor(0.015*gaji)
-      gaji_bersih = gaji - potongan
 else:
       gaji = 5500000
       potongan = floor(0.01*gaji)
-      gaji_bersih = gaji - potongan
+
+gaji_bersih = gaji - potongan
       
 print('\n'+'='*36)
 print('STRUK RINCIAN GAJI KARYAWAN'.center(36))
