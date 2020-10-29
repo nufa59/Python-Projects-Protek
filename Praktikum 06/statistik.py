@@ -1,8 +1,8 @@
 def sum(*data):
-    hasil = 0
+    value = 0
     for i in data:
-        hasil += i
-    return hasil
+        value += i
+    return value
 
 def average(*data):
     return sum(*data)/len(data)
