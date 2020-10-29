@@ -10,10 +10,15 @@ if golongan not in list_gol:
     print('Input golongan tidak valid')
     exit()
     
-status = int(input('Masukan status [0:Belum Menikah, 1:Sudah Menikah] : '))
+status = int(input('Masukan status [1:Sudah Menikah, 2:Belum Menikah] : '))
 if status == 1:
     jumlah_anak = int(input('Masukkan jumlah anak   : '))
-
+elif status == 2:
+    status -= 2
+else:
+    print('Input status tidak valid')
+    exit()    
+    
 status_menikah = {
     0: 'Belum Menikah',
     1: 'Sudah Menikah'
@@ -23,30 +28,25 @@ if golongan == 'A':
       gaji_pokok = 10000000
       potongan = 0.025*gaji_pokok
       tunjangan_menikah = 0.1 * gaji_pokok * status
-      tunjangan_anak = 0.5 * gaji_pokok * jumlah_anak
-      gaji_kotor = gaji_pokok + tunjangan_menikah + tunjangan_anak
-      gaji_bersih = gaji_kotor - potongan
+      tunjangan_anak = 0.05 * gaji_pokok * jumlah_anak
 elif golongan == 'B':
       gaji_pokok = 8500000
       potongan = 0.02*gaji_pokok
       tunjangan_menikah = 0.1 * gaji_pokok * status
-      tunjangan_anak = 0.5 * gaji_pokok * jumlah_anak
-      gaji_kotor = gaji_pokok + tunjangan_menikah + tunjangan_anak
-      gaji_bersih = gaji_kotor - potongan
+      tunjangan_anak = 0.05 * gaji_pokok * jumlah_anak
 elif golongan == 'C':
       gaji_pokok = 7000000
       potongan = 0.015*gaji_pokok
       tunjangan_menikah = 0.1 * gaji_pokok * status
-      tunjangan_anak = 0.5 * gaji_pokok * jumlah_anak
-      gaji_kotor = gaji_pokok + tunjangan_menikah + tunjangan_anak
-      gaji_bersih = gaji_kotor - potongan
+      tunjangan_anak = 0.05 * gaji_pokok * jumlah_anak
 else:
       gaji_pokok = 5500000
       potongan = 0.01*gaji_pokok
       tunjangan_menikah = 0.1 * gaji_pokok * status
-      tunjangan_anak = 0.5 * gaji_pokok * jumlah_anak
-      gaji_kotor = gaji_pokok + tunjangan_menikah + tunjangan_anak
-      gaji_bersih = gaji_kotor - potongan
+      tunjangan_anak = 0.05 * gaji_pokok * jumlah_anak
+
+gaji_kotor = gaji_pokok + tunjangan_menikah + tunjangan_anak
+gaji_bersih = gaji_kotor - potongan
 
 print('\n'+'='*44)
 print('STRUK RINCIAN GAJI KARYAWAN'.center(44))
