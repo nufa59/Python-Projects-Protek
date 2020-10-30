@@ -3,4 +3,6 @@ def starFormation2(n):
         for j in range(i):
             print('*', end=' ')
         print(' ')
-starFormation2(5)
+
+if __name__ == "__main__":
+    starFormation2(5)

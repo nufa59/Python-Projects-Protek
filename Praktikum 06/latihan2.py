@@ -4,4 +4,5 @@ def starFormation1(n):
             print('*', end=' ')
         print(' ')
 
-starFormation1(5)
+if __name__ == "__main__":
+    starFormation1(5)

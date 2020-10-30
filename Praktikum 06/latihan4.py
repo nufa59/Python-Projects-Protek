@@ -1,14 +1,5 @@
-def starFormation1(n):        
-    for i in range(n):
-        for j in range(i + 1):
-            print('*', end=' ')
-        print(' ')
-
-def starFormation2(n):        
-    for i in range(n, 0, -1):
-        for j in range(i):
-            print('*', end=' ')
-        print(' ')
+from latihan2 import *
+from latihan3 import *
 
 def starFormation3(n):
     if n % 2 == 1:
@@ -17,4 +8,4 @@ def starFormation3(n):
         starFormation1(n//2)
     starFormation2(n//2)
 
-starFormation3(6)
+starFormation3(7)
