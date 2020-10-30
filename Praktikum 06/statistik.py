@@ -8,7 +8,7 @@ def average(*data):
     return sum(*data)/len(data)
 
 def min(*data):
-    value = 999999999
+    value = data[0]
     for i in data:
         if i < value:
             value = i
@@ -17,7 +17,7 @@ def min(*data):
 def max(*data):
     value = data[0]
     for i in data:
-        if value < i:
+        if i > value:
             value = i
     return value
 
