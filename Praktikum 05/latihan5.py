@@ -29,21 +29,25 @@ if golongan == 'A':
       potongan = 0.025*gaji_pokok
       tunjangan_menikah = 0.1 * gaji_pokok * status
       tunjangan_anak = 0.05 * gaji_pokok * jumlah_anak
+      pot_percent = '2.5 %'
 elif golongan == 'B':
       gaji_pokok = 8500000
       potongan = 0.02*gaji_pokok
       tunjangan_menikah = 0.1 * gaji_pokok * status
       tunjangan_anak = 0.05 * gaji_pokok * jumlah_anak
+      pot_percent = '2.0 %'
 elif golongan == 'C':
       gaji_pokok = 7000000
       potongan = 0.015*gaji_pokok
       tunjangan_menikah = 0.1 * gaji_pokok * status
       tunjangan_anak = 0.05 * gaji_pokok * jumlah_anak
+      pot_percent = '1.5 %'
 else:
       gaji_pokok = 5500000
       potongan = 0.01*gaji_pokok
       tunjangan_menikah = 0.1 * gaji_pokok * status
       tunjangan_anak = 0.05 * gaji_pokok * jumlah_anak
+      pot_percent = '1.0 %'
 
 gaji_kotor = gaji_pokok + tunjangan_menikah + tunjangan_anak
 gaji_bersih = gaji_kotor - potongan
@@ -63,6 +67,6 @@ if status == 1:
     print('Tunjangan Anak         : Rp', floor(tunjangan_anak))
 print('-'*44,'+')
 print('Gaji Kotor             : Rp', floor(gaji_kotor))
-print('Potongan               : Rp', floor(potongan))
+print(f'Potongan ({pot_percent})       : Rp', floor(potongan))
 print('-'*44,'-')
 print('Gaji Bersih            : Rp', floor(gaji_bersih))
