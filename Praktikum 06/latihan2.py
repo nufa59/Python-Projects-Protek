@@ -5,4 +5,4 @@ def starFormation1(n):
         print(' ')
 
 if __name__ == "__main__":
-    starFormation1(5)
+    starFormation1(4)
