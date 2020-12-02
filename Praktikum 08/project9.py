@@ -1,4 +1,7 @@
 def get_total_harga(data):
+	print('='*30)
+	print('Toko Buah ABC'.center(30))
+	print('='*30)
 	data_nama = [x for x in data.keys()]
 	print('Daftar Buah')
 	for x,y in data.items():

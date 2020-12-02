@@ -65,6 +65,9 @@ def tambah_data(data):
 			break
 
 def menu(data):
+	print('='*30)
+	print('Toko Buah ABC'.center(30))
+	print('='*30)
 	print('''
 Menu: 
 A. Tambah data buah
