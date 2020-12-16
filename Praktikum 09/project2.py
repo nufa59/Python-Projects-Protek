@@ -4,8 +4,8 @@ def bintang(n):
 
 while True:
     try: 
-        jumlah_bintang = int(input('Masukan nilai n: '))
-        bintang(jumlah_bintang)
+        tinggi = int(input('Masukan nilai n: '))
+        bintang(tinggi)
         break
     except ValueError:
         print('Yang anda masukan bukan angka')

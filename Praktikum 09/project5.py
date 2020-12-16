@@ -1,4 +1,3 @@
-
 nilai = [{'nim' : 'A01', 'nama' : 'Agustina', 'mid' : 50, 'uas' : 80}, 
          {'nim' : 'A02', 'nama' : 'Budi', 'mid' : 40, 'uas' : 90}, 
          {'nim' : 'A03', 'nama' : 'Chicha', 'mid' : 100, 'uas' : 50}, 
