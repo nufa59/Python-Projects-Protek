@@ -1,0 +1,5 @@
+K3520001|Ahmad|Solo
+K3520002|Amir|Semarang
+K3520003|Anisa|Karanganyar
+K3520057|Rozaq|Sragen
+K3520010|Destri|Solo
